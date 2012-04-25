@@ -28,7 +28,7 @@ class ViewBackedThing < ActiveRecord::Base
   saves_to :thing_decorations, :thing_id, :decoration
 end
 
-describe Acts::As::Savable do
+describe ActsAsSavable do
   shared_examples "examples" do |group_description|
     metadata[:example_group][:description] = group_description
 

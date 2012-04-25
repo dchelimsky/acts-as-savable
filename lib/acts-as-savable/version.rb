@@ -1,7 +1,3 @@
-module Acts
-  module As
-    module Savable
-      VERSION = "0.0.1"
-    end
-  end
+module ActsAsSavable
+  VERSION = "0.0.1"
 end

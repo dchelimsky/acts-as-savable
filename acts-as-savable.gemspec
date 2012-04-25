@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "acts-as-savable"
   gem.require_paths = ["lib"]
-  gem.version       = Acts::As::Savable::VERSION
+  gem.version       = ActsAsSavable::VERSION
 end
