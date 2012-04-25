@@ -4,8 +4,8 @@ require File.expand_path('../lib/acts-as-savable/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["David Chelimsky"]
   gem.email         = ["dchelimsky@gmail.com"]
-  gem.description   = %q{ActiveRecord plugin for a view-backed model. Stores data to an underlying table.}
-  gem.summary       = %q{ActiveRecord plugin for a view-backed model.}
+  gem.description   = %q{Extends an ActiveRecord model so that it can read from a view and save to a table.}
+  gem.summary       = %q{Extends an ActiveRecord model so that it can read from a view and save to a table.}
   gem.homepage      = "http://github.com/dchelimsky/acts-as-savable"
 
   gem.files         = `git ls-files`.split($\)
