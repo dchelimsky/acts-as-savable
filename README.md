@@ -1,4 +1,4 @@
-# Acts::As::Savable
+# ActsAsSavable
 
 acts-as-savable extends an ActiveRecord model so that it can read from a view,
 and save to a table.
