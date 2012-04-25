@@ -18,7 +18,7 @@ module ActsAsSavable
 
         define_method :_acts_as_savable_object do
           klass = Class.new(ActiveRecord::Base) { self.table_name = table_name }
-          instance = id ? klass.find_by_thing_id(id) : klass.new
+          instance = id ? klass.find(id) : klass.new
           attrs.each {|attr| instance.send("#{attr}=", send(attr))}
           instance
         end
