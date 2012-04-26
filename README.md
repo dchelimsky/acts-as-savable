@@ -1,7 +1,7 @@
 # ActsAsSavable
 
-acts-as-savable extends an ActiveRecord model so that it can read from a view,
-and save to a table.
+acts-as-savable extends an ActiveRecord model so that it can read from one
+source and save to another.
 
 ## Installation
 
@@ -29,13 +29,13 @@ Given tables named "things" and "thing_decorations", and a view named
 
 All the finders work as expected, but `save`, `save!`, `update_attribute`,
 `update_attributes`, and `update_attributes!` all create and/or update records
-in the "thing_decorations" table (in this case updating ony the `:thing_id` and
-`:decoration` columns).
+in the "thing_decorations" table (in this example updating ony the `:thing_id`
+and `:decoration` columns).
 
 ## Status
 
 This was extracted from an app, and is constrained by assumptions related to
-that app. It is very naive and not likely to solve all of your problems. If you
-have a problem that this almost solves, but not quite, please file an issue at
-https://github.com/dchelimsky/acts-as-savable/issues and help me to make it
-more useful for a wider audience.
+that app. It is very naive and not likely to solve all, if any, of your
+problems. If you have a problem that this almost solves, but not quite, please
+file an issue at https://github.com/dchelimsky/acts-as-savable/issues and help
+me to make it useful for more scenarios.
